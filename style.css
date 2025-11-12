@@ -135,3 +135,15 @@ footer {
   object-fit: cover;
   border-radius: 4px;
 }
+.slider-container {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  padding: 1rem;
+}
+
+.slider {
+  display: flex;
+  gap: 1rem;
+  scroll-behavior: smooth;
+}
