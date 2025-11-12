@@ -36,7 +36,7 @@ footer {
   padding: 1rem;
 }
 
-/* ========== WHATSAPP BUTTONS ========== */
+/* ========== WHATSAPP BUTTON ========== */
 .whatsapp-float {
   position: fixed;
   width: 60px;
@@ -142,4 +142,98 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .product-card {
+    width: 220px;
+    height: 320px;
+  }
+  .product-card img {
+    height: 160px;
+  }
+  .slider {
+    animation: scrollLoop 35s linear infinite; /* slightly slower */
+  }
+}
+
+/* Large phones and portrait tablets */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .product-card {
+    width: 200px;
+    height: 300px;
+    padding: 0.8rem;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+
+  .product-card h4 {
+    font-size: 0.95rem;
+  }
+
+  .product-card p {
+    font-size: 0.85rem;
+  }
+
+  .slider {
+    animation: scrollLoop 40s linear infinite; /* slower for readability */
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  #hero {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .product-card {
+    width: 160px;
+    height: 260px;
+    padding: 0.6rem;
+  }
+
+  .product-card img {
+    height: 130px;
+  }
+
+  .product-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .product-card p {
+    font-size: 0.8rem;
+    white-space: normal; /* allow text to wrap on mobile */
+  }
+
+  .slider {
+    animation: scrollLoop 45s linear infinite; /* slowest for smaller screens */
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-float img {
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+  }
 }
