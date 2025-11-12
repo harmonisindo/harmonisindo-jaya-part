@@ -77,21 +77,19 @@
     <img src="assets/whatsapp-icon.png" alt="WhatsApp" />
   </a>
 
-    <script>
+  <script>
     const slider = document.querySelector('.slider');
-    let scrollAmount = 0;
 
     function autoScroll() {
-      scrollAmount += 1;
-      if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
-        scrollAmount = 0;
-        slider.scrollLeft = 0;
-      } else {
-        slider.scrollLeft = scrollAmount;
+      if (slider) {
+        slider.scrollLeft += 1;
+        if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
+          slider.scrollLeft = 0;
+        }
       }
     }
 
-    setInterval(autoScroll, 30); // Adjust speed here (lower = faster)
+    setInterval(autoScroll, 20); // Lower = faster
   </script>
 </body>
 </html>
