@@ -89,7 +89,7 @@ footer {
 .slider {
   display: flex;
   gap: 1rem;
-  animation: scrollLoop 30s linear infinite;
+  animation: scrollLoop 15s linear infinite;
 }
 
 @keyframes scrollLoop {
